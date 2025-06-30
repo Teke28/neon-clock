@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Digital Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕒</text></svg>"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Neon Digital Clock</h1>
+    </header>
+
+    <main class="clock-container">
+      <section class="clock-display" aria-label="Digital Clock">
+        <div class="time">
+          <span id="hours">00</span>: <span id="minutes">00</span>:
+          <span id="seconds">00</span>
+          <span id="ampm" class="ampm"></span>
+        </div>
+        <div class="date">
+          <span id="weekday">MON</span>,
+          <span id="month">JAN</span>
+          <span id="day">01</span>,
+          <span id="year">2023</span>
+        </div>
+      </section>
+
+      <section class="controls">
+        <button id="theme-toggle" aria-pressed="false">Toggle Theme</button>
+        <button id="format-toggle">12/24 Hour</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="current-year">2025</span> Neon Clock by
+        <strong>Tekele Tesfeye</strong>. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
